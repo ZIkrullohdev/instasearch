@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram search</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="img / png" href="assets/img/2048px-Instagram_icon.png">
+</head>
+<body>
+    <div class="ibox">
+        <a class="logo" href="#"><img width="200px" src="assets/img/d2529dbef8ed.png" alt=""></a>
+        <input class="query" type="text" placeholder="Username">
+        <a  href="#" class="btn">Search</a>
+    </div>
+
+    <script>
+        let query = document.querySelector('.query');
+        let btn = document.querySelector('.btn')
+
+        btn.onclick = function(){
+            let url ='https://www.instagram.com/'+query.value;
+            window.open(url);   
+        }
+    </script>
+</body>
+</html>
